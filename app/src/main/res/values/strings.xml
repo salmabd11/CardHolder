@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Card Holder</string>
+    <string name="AdmobAppid">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="Businesstype">Business type</string>
+    <string name="NameOfCardHolder">Name Of Card Holder</string>
+    <string name="CardHolderPhone">Card Holder Phone Number</string>
+    <string name="CardHolderEmail">Card Holder Email-ID</string>
+    <string name="PersonalUrl">Personal Url (Your Any Link)</string>
+    <string name="input_error_User">1</string>
+    <string name="Useremail">User email</string>
+    <string name="UserPersonalUrl">User Personal Url</string>
+    <string-array name="SetBusinessType">
+        <item> Set Business Type </item>
+        <item> Doctor </item>
+        <item> Nurse </item>
+        <item> Dentist </item>
+        <item> Paramedic </item>
+        <item> Engineer </item>
+        <item> Businessman </item>
+        <item> Teacher </item>
+        <item> Architect </item>
+        <item> Sub-contractor </item>
+        <item> Broker </item>
+        <item> Lawyer </item>
+        <item> Singer </item>
+        <item> Librarian </item>
+        <item> Salesman </item>
+        <item> Pope </item>
+        <item> Priest </item>
+        <item> Imam </item>
+        <item> Driver </item>
+        <item> Journalist </item>
+        <item> Detective </item>
+        <item> Cameraman </item>
+        <item> Boxer </item>
+        <item> Carpenter </item>
+        <item> Fireman </item>
+        <item> Flight attendant </item>
+        <item> Farmer </item>
+        <item> Foreman </item>
+        <item> Builder </item>
+        <item> Forest ranger </item>
+        <item> Footballer </item>
+        <item> Cricketer </item>
+        <item> Gardener </item>
+        <item> Housekeeper </item>
+        <item> Supervisor </item>
+        <item> Magician </item>
+        <item> Mechanic </item>
+        <item> Painter </item>
+        <item> Pilot </item>
+        <item> Photographer </item>
+        <item> Postman </item>
+        <item> Police officer </item>
+        <item> Professor </item>
+        <item> Construction worker </item>
+        <item> Reporter </item>
+        <item> Scientist </item>
+        <item> Repairman </item>
+        <item> Soldier </item>
+        <item> Surgeon </item>
+        <item> Student </item>
+        <item> Electrician </item>
+        <item> Politician </item>
+        <item> Waiter </item>
+        <item> Lift Sector </item>
+        <item> Cement Sector </item>
+        <item> Stone Sand Brick Sector </item>
+        <item> Rod Sector </item>
+        <item> Chemical Sector </item>
+        <item> Bank Sector </item>
+        <item> Ceramics Sector </item>
+        <item> Steel Sector </item>
+        <item> Sanitary Sector </item>
+        <item> Electric Sector </item>
+        <item> Generator Sector </item>
+        <item> Pump Sector </item>
+        <item> Hardware Sector </item>
+        <item> Proprietor </item>
+        <item> Guard </item>
+        <item> Others </item>
+    </string-array>
+</resources>

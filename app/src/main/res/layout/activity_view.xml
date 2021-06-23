@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ViewActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlbanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/imageback"
+        android:gravity="center"
+        android:padding="5dp">
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/maingolpo"
+        android:layout_below="@+id/rlbanner"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+    <LinearLayout
+        android:id="@+id/photo"
+        android:layout_below="@+id/rlbanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+<TextView
+    android:visibility="gone"
+    android:id="@+id/TXTImageUri"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/TXTImageUri1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    android:gravity="center"
+    android:background="@drawable/edittextback">
+    <com.ortiz.touchview.TouchImageView
+        android:visibility="visible"
+        android:id="@+id/singleimageviewVA"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="5dp"
+        android:src="@drawable/numanvivitingcard1" />
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="3dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittextback">
+            <com.ortiz.touchview.TouchImageView
+                android:visibility="visible"
+                android:id="@+id/singleimageviewVA1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="5dp"
+                android:src="@drawable/numanvivitingcard1" />
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Point : "
+                android:textSize="16dp"
+                android:drawablePadding="15dp"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:textColor="#880F88"/>
+            <TextView
+                android:id="@+id/RePoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:text=" 20"
+                android:textAlignment="textStart"
+                android:textColor="#880F88"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name : "
+                android:textSize="16dp"
+                android:drawablePadding="15dp"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:textColor="#880F88"/>
+            <TextView
+                android:id="@+id/TxtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:hint="@string/NameOfCardHolder"
+                android:textAlignment="textStart"
+                android:textColor="#880F88"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/StoryName"
+            android:layout_below="@+id/photo"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone : "
+                android:textSize="14dp"
+                android:drawablePadding="15dp"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:textColor="#880F88"/>
+            <TextView
+                android:id="@+id/TxtPhone"
+                android:layout_width="wrap_content"
+                android:drawablePadding="15dp"
+                android:layout_height="wrap_content"
+                android:textColor="#880F88"
+                android:layout_marginStart="5dp"
+                android:textAlignment="textStart"
+                android:hint="@string/CardHolderPhone"
+                android:textSize="14dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/Partlay"
+            android:layout_below="@+id/StoryName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-Mail : "
+                android:textSize="14dp"
+                android:drawablePadding="15dp"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:textColor="#880F88"/>
+            <TextView
+                android:id="@+id/TxtEmail"
+                android:layout_width="wrap_content"
+                android:drawablePadding="15dp"
+                android:layout_height="wrap_content"
+                android:textColor="#0C0C0C"
+                android:hint="@string/CardHolderEmail"
+                android:layout_marginStart="5dp"
+                android:textAlignment="textStart"
+                android:textSize="14dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@+id/StoryName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Main Job : "
+                android:textSize="14dp"
+                android:drawablePadding="15dp"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:textColor="#880F88"/>
+
+            <TextView
+                android:id="@+id/TxtmainBuinss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:nextFocusDown="@id/PUrl"
+                android:padding="5dp"
+                android:hint="Your Main Business"
+                android:textColorHighlight="@color/black"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LauoutCon"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/buttonbackround"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/PhoneCall"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:background="@drawable/phonecall"/>
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Call.."
+                    android:textColor="#136C17"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/aclonica"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/buttonbackround"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/EmailBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:background="@drawable/emailpp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mail"
+                    android:textColor="#136C17"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/aclonica"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/buttonbackround"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/SmsBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:background="@drawable/sms"/>
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SMS"
+                    android:textColor="#136C17"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/aclonica"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <WebView
+                    android:id="@+id/TxtUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:drawablePadding="15dp"
+                    android:hint="@string/app_name"
+                    android:textAlignment="textStart"
+                    android:textColor="#0C0C0C"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

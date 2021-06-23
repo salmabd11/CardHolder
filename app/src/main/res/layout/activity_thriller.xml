@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Thriller">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/LayoutShare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="2dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/advideobutton"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/inputsearch"
+            android:textColor="#070707"
+            android:layout_marginRight="3dp"
+            android:visibility="invisible"
+            android:text="Magic"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/inputSerch"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/LayoutShare"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/inputsearch"
+        android:drawableRight="@drawable/ic_search"
+        android:hint="Name Of Story"
+        android:padding="10dp" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/mainDb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputSerch">
+
+    </TextView>
+
+    <RelativeLayout
+        android:layout_below="@+id/inputSerch"
+        android:id="@+id/rlbanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:background="@drawable/imageback"
+        android:layout_marginTop="5dp"
+        android:padding="3dp">
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlbanner"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/imageback"
+        android:padding="8dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/recyclerView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="334dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="Add"
+        android:src="@drawable/ic_add_circle" />
+
+
+
+</RelativeLayout>

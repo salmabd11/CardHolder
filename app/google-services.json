@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "387945153126",
+    "project_id": "card-holder-94fa7",
+    "storage_bucket": "card-holder-94fa7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387945153126:android:64c03c4585741a8699e3a7",
+        "android_client_info": {
+          "package_name": "com.numan.cardholder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "387945153126-ie7jrlu43lo1f476scbuq371571oa13o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-PtDm-kk11HL8SuMPPMrLh3GYRDrqF2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "387945153126-ie7jrlu43lo1f476scbuq371571oa13o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,987 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainHome"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rlbanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:padding="5dp">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/WelcomTxt"
+        android:layout_below="@+id/rlbanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="welcome"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#4A048F"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/BtnCardAdd"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/WelcomTxt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="-8dp"
+        android:layout_marginEnd="125dp"
+        android:background="@drawable/btnback"
+        android:text="Add Your Card"
+        android:textColor="#090909"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BtnCardAdd"
+        android:layout_above="@+id/SherLayout">
+        <ScrollView
+            android:id="@+id/ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <Button
+                        android:id="@+id/BTNDoctor"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Doctor"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <Button
+                        android:id="@+id/BTNNurse"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:onClick="Ditective"
+                        android:text="Nurse"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNDentist"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:onClick="Tragedy"
+                        android:text="Dentist"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <Button
+                        android:id="@+id/BTNParamedic"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:onClick="Horror"
+                        android:text="Paramedic"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNEngineer"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Engineer"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNArchitect"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Architect"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <Button
+                        android:id="@+id/BTNBusinessman"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Businessman"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNTeacher"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Teacher"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNSubcontractor"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Sub-contractor"
+                        android:textColor="#0A0A0B"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <Button
+                        android:id="@+id/BTNSinger"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Singer"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNLibrarian"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Librarian"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNSalesman"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Salesman"
+                        android:textColor="#0A0A0B"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <Button
+                        android:id="@+id/BTNPope"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Pope"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNPriest"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Priest"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNImam"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Imam"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <Button
+                        android:id="@+id/BTNDriver"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Driver"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNJournalist"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Journalist"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNDetective"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Detective"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <Button
+                        android:id="@+id/BTNCameraman"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Cameraman"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNBoxer"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Boxer"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNCarpenter"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Carpenter"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <Button
+                        android:id="@+id/BTNFireman"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Fireman"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNFlightattendant"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Flight attendant"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNFarmer"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Farmer"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <Button
+                        android:id="@+id/BTNForeman"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Foreman"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNBuilder"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Builder"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNForestranger"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Forest ranger"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <Button
+                        android:id="@+id/BTNFootballer"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Footballer"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNCricketer"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Cricketer"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNGardener"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Gardener"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <Button
+                        android:id="@+id/BTNHousekeeper"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Housekeeper"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNSupervisor"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Supervisor"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNMagician"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Magician"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <Button
+                        android:id="@+id/BTNMechanic"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Mechanic"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNPainter"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Painter"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNPilot"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Pilot"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <Button
+                        android:id="@+id/BTNPhotographer"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Photographer"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNPostman"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Postman"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNPoliceofficer"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Police officer"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <Button
+                        android:id="@+id/BTNProfessor"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Professor"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNConstructionworker"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Construction worker"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNReporter"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Reporter"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <Button
+                        android:id="@+id/BTNScientist"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Scientist"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNRepairman"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Repairman"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNSoldier"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Soldier"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <Button
+                        android:id="@+id/BTNSurgeon"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Surgeon"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNStudent"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Student"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNElectrician"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Electrician"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <Button
+                        android:id="@+id/BTNPolitician"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Politician"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNWaiter"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Waiter"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNLiftSector"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Lift Sector"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <Button
+                        android:id="@+id/BTNCementSector"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Cement Sector"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNRodSector"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Rod Sector"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNStoneSandBrickSector"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Stone Sand Brick Sector"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <Button
+                        android:id="@+id/BTNChemicalSector"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Chemical Sector"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNBankSector"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Bank Sector"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNCeramicsSector"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Ceramics Sector"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <Button
+                        android:id="@+id/BTNSteelSector"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Steel Sector"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNSanitarySector"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Sanitary Sector"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNElectricSector"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Electric Sector"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <Button
+                        android:id="@+id/BTNGeneratorSector"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Generator Sector"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNPumpSector"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Sanitary Sector"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNHardwareSector"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Hardware Sector"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="25dp"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+                    <Button
+                        android:id="@+id/BTNProprietor"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Proprietor"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNGuard"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Guard"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNOthers"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Others"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="25dp"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+                    <Button
+                        android:id="@+id/BTNBroker"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Broker"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNLawyer"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btnback"
+                        android:text="Lawyer"
+                        android:textColor="#0A0A0B"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/SherLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <Button
+            android:id="@+id/ShareBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/btnback"
+            android:onClick="Share"
+            android:text="Share"
+            android:textColor="#0A0A0B" />
+
+        <Button
+            android:id="@+id/privacypolicy"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/btnback"
+            android:onClick="privacypolicy"
+            android:text="privacy policy"
+            android:textColor="#0A0A0B" />
+
+        <Button
+            android:id="@+id/advideobutton"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/btnback"
+            android:onClick="VideoAdOpen"
+            android:text="Magic"
+            android:textColor="#0A0A0B"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+</RelativeLayout>
